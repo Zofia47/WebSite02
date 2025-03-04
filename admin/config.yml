@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: Zofia47/WebSite02
+  branch: main
+
+media_folder: "static/img" # Pasta para imagens
+public_folder: "/img"
+
+collections:
+  - name: "pages"
+    label: "Páginas"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "text" }
+          - { label: "Imagem", name: "image", widget: "image" }
